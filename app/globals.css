@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heading-tag {
+    @apply after:content-[''] after:block after:w-full after:h-[4px] after:rounded-full after:relative after:top-[-2px];
+  }
+  .card-1 {
+    @apply px-4 container mx-auto sm:py-8 sm:grid sm:grid-cols-[200px,_1fr] md:gap-24 lg:grid-cols-2 lg:py-12 xl:py-[70px];
+  }
+  .card-2 {
+    @apply px-4 container mx-auto sm:py-8 sm:grid sm:grid-cols-[1fr,_200px] md:gap-24 lg:grid-cols-2 lg:py-12 xl:py-[70px];
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  height: auto !important;
+}
+.swiper-pagination {
+  bottom: 20px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #5c3caf !important;
+}
